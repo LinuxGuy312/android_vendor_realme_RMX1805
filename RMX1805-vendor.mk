@@ -9,6 +9,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1805/proprietary/etc/cne/Nexus/ATT/ATT_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ATT/ATT_profiles.xml \
     vendor/realme/RMX1805/proprietary/etc/cne/Nexus/ROW/ROW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/ROW/ROW_profiles.xml \
     vendor/realme/RMX1805/proprietary/etc/cne/Nexus/VZW/VZW_profiles.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/cne/Nexus/VZW/VZW_profiles.xml \
+    vendor/realme/RMX1805/proprietary/etc/firmware/ice40.bin:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/ice40.bin \
+    vendor/realme/RMX1805/proprietary/etc/firmware/wlan/prima/WCNSS_cfg.dat:$(TARGET_COPY_OUT_SYSTEM)/etc/firmware/wlan/prima/WCNSS_cfg.dat \
     vendor/realme/RMX1805/proprietary/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/audiosphere.xml \
     vendor/realme/RMX1805/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/realme/RMX1805/proprietary/etc/permissions/com.qualcomm.qti.imscmservice.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/com.qualcomm.qti.imscmservice.xml \
@@ -247,8 +249,38 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1805/proprietary/vendor/etc/seccomp_policy/mediacodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediacodec.policy \
     vendor/realme/RMX1805/proprietary/vendor/etc/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf \
     vendor/realme/RMX1805/proprietary/vendor/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/ILITEK_FW.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/ILITEK_FW.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a225_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pfp.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a225_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225_pm4.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a225p5_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a225p5_pm4.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a300_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pfp.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a300_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a300_pm4.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a330_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pfp.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a330_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a330_pm4.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a420_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pfp.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a420_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a420_pm4.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a506_zap.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b00 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a506_zap.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b01 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a506_zap.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.b02 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a506_zap.elf:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.elf \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a506_zap.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/a506_zap.mdt \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a530_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_gpmu.fw2 \
     vendor/realme/RMX1805/proprietary/vendor/firmware/a530_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pfp.fw \
     vendor/realme/RMX1805/proprietary/vendor/firmware/a530_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530_pm4.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a530v1_pfp.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pfp.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a530v1_pm4.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v1_pm4.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a530v2_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v2_seq.fw2 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a530v3_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_gpmu.fw2 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a530v3_seq.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a530v3_seq.fw2 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/a540_gpmu.fw2:$(TARGET_COPY_OUT_VENDOR)/firmware/a540_gpmu.fw2 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.b00 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.b01 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.b02 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.b03 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.b04 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.b05 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.b06 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/alipay.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/alipay.mdt \
     vendor/realme/RMX1805/proprietary/vendor/firmware/cpp_firmware_v1_10_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_10_0.fw \
     vendor/realme/RMX1805/proprietary/vendor/firmware/cpp_firmware_v1_12_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_12_0.fw \
     vendor/realme/RMX1805/proprietary/vendor/firmware/cpp_firmware_v1_1_1.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_1_1.fw \
@@ -260,6 +292,51 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX1805/proprietary/vendor/firmware/cpp_firmware_v1_5_2.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_5_2.fw \
     vendor/realme/RMX1805/proprietary/vendor/firmware/cpp_firmware_v1_6_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_6_0.fw \
     vendor/realme/RMX1805/proprietary/vendor/firmware/cpp_firmware_v1_8_0.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/cpp_firmware_v1_8_0.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.b00 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.b01 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.b02 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.b03 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.b04 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.b05 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.b06 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/cryptoeng.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/cryptoeng.mdt \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/emmc/HYNIX-hB8aP>.bin_crc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc/HYNIX-hB8aP>.bin_crc.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/emmc/SAMSUNG-GD6BMB.bin_crc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc/SAMSUNG-GD6BMB.bin_crc.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/emmc/SAMSUNG-QD63MB.bin_crc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc/SAMSUNG-QD63MB.bin_crc.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/emmc/SAMSUNG-QE63MB.bin_crc.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc/SAMSUNG-QE63MB.bin_crc.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/emmc/move_target_emmc_fw_to_reserve4.sh:$(TARGET_COPY_OUT_VENDOR)/firmware/emmc/move_target_emmc_fw_to_reserve4.sh \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.b00 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.b01 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.b02 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.b03 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.b04 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.b05 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.b06 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/facereg.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/facereg.mdt \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.b00:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b00 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.b01:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b01 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.b02:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b02 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.b03:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b03 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.b04:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b04 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.b05:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b05 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.b06:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.b06 \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/fpctzapp.mdt:$(TARGET_COPY_OUT_VENDOR)/firmware/fpctzapp.mdt \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/himax_firmware_hlt_05.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/himax_firmware_hlt_05.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/himax_firmware_sort_tcl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/himax_firmware_sort_tcl.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/himax_firmware_tcl.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/himax_firmware_tcl.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/hx_criteria.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/hx_criteria.csv \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/hx_criteria_tcl.csv:$(TARGET_COPY_OUT_VENDOR)/firmware/hx_criteria_tcl.csv \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/leia_pfp_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pfp_470.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/leia_pm4_470.fw:$(TARGET_COPY_OUT_VENDOR)/firmware/leia_pm4_470.fw \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/mp.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/mp.ini \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/novatek_tm_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_tm_ts_fw.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/novatek_tm_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_tm_ts_mp.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/novatek_xl_mp.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_xl_mp.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/novatek_xl_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/novatek_xl_ts_fw.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_cfg.ini \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/wlan/prima/WCNSS_wlan_dictionary.dat:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/prima/WCNSS_wlan_dictionary.dat \
+    vendor/realme/RMX1805/proprietary/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini \
     vendor/realme/RMX1805/proprietary/vendor/lib/android.frameworks.faceservice@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/android.frameworks.faceservice@1.0.so \
     vendor/realme/RMX1805/proprietary/vendor/lib/com.qualcomm.qti.dpm.api@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/com.qualcomm.qti.dpm.api@1.0.so \
     vendor/realme/RMX1805/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/eglSubDriverAndroid.so \
